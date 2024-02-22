@@ -12,47 +12,45 @@
   color: #61dafb;
 }
 
-.wrapper {
 
-  
-  .card{
-    border: 2px solid white;
-    display: flex;
-    justify-content: center;
+.quote-box {
+  padding: 40px 50px;
+  width: 450px;
+  background-color: #fff;
+  border: 2px solid white;
+  display: table;
+
+  position: relative;
+
+  .quote-text {
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.75em;
+    height: auto;
+
+
   }
 
-  .quote-box{
-    padding: 40px 50px;
+  .quote-author {
+    text-align: right;
+    font-size: 1.0em;
+    padding: 20px 0;
+  }
 
-    .quote-text{
-      text-align: center;
-      font-weight: 500;
-      font-size: 1.75em;
-      width: 450px;
-     
-    }
-    .quote-author{
-      text-align: right;
-      font-size: 1.0em;
-      margin: 20px 0;
-    }
+  .buttons {
+    height: 38px;
+  }
 
-    .buttons{
+  .button-container {
+    float: right;
+
+    button {
       height: 38px;
-    }
-
-    .button-container {
-      float: right;
-
-       button{
-        height: 38px;
-        border: none;
-       }
-    }
-    .link-container{
-      float: left;
+      border: none;
     }
   }
-  
-}
 
+  .link-container {
+    float: left;
+  }
+}
