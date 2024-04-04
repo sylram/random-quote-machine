@@ -1,9 +1,15 @@
+* {
+  margin: 0;
+}
+
+
 .App {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   font-family: 'Raleway', sans-serif;
+  margin: auto;
 
 }
 
@@ -16,11 +22,13 @@
 .quote-box {
   padding: 40px 50px;
   width: 450px;
+  max-width: 80%;
   background-color: #fff;
   border: 2px solid white;
   display: table;
+  border-radius: 15px;
 
-  position: relative;
+  /* position: relative; */
 
   .quote-text {
     text-align: center;

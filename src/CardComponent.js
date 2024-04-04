@@ -3,6 +3,7 @@ import React from "react";
 import { Button } from 'react-bootstrap';
 import twitter from './twitter-x.svg'
 import { useState, useEffect } from "react";
+import { TwitterShareButton } from "react-share";
 
 
 function CardComponent({ quotes }) {
@@ -46,7 +47,7 @@ function CardComponent({ quotes }) {
         <div id="author" className="quote-author">{autor}</div>
         <div className="buttons">
           <span id="link-container" className="link-container">
-            <a href="https://twitter.com/" id="tweet-quote" targe="blank"><img src={twitter} className="App-logo" alt="logo" /></a>
+          <TwitterShareButton url="https://random-quote-machine-fawn.vercel.app/" title="Check out this quote!"><img src={twitter} className="App-logo" alt="logo" /></TwitterShareButton>
           </span>
           <span id="button-container" className="button-container">
             <button id="new-quote" type="button" className="btn btn-primary btn-sm button" onClick={getRandomQuote}>New Quote</button>
