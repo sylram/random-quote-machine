@@ -4,12 +4,14 @@ import './index.css';
 
 import reportWebVitals from './reportWebVitals';
 import App from './App';
+import withAuthenticator from './withAuthenticator';
 import CardComponent from './CardComponent';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <withAuthenticator />
     <App/>
     
   </React.StrictMode>
