@@ -3,8 +3,13 @@ import CardComponent from './CardComponent';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import React, { useState, useEffect } from "react";
+import { Amplify } from 'aws-amplify';
+import awsconfig from './aws-exports';
+import { withAuthenticator} from '@aws-amplify/ui-react';
+import '@aws-amplify/ui-react/styles.css';
 
-
+Amplify.configure(awsconfig)
+  
 function App() {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -41,8 +46,7 @@ function App() {
     <div id="App" className='App'>
     {!loading ?  <CardComponent quotes={data}/> : <div>{error.message}</div> }
     </div>
-
   )
 }
 
-export default App;
+export default withAuthenticator(App);
