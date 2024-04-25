@@ -1,0 +1,25 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-randomquotemachine-staging-00705-authRole",
+      "UnauthRoleArn": "arn:aws:iam::888591834400:role/amplify-randomquotemachine-staging-00705-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::888591834400:role/amplify-randomquotemachine-staging-00705-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-randomquotemachine-staging-00705-deployment",
+      "UnauthRoleName": "amplify-randomquotemachine-staging-00705-unauthRole",
+      "StackName": "amplify-randomquotemachine-staging-00705",
+      "StackId": "arn:aws:cloudformation:us-east-2:888591834400:stack/amplify-randomquotemachine-staging-00705/50075e90-d116-11ee-869a-029cc23925d5",
+      "AmplifyAppId": "dej043l7hxpv8"
+    },
+    "categories": {
+      "auth": {
+        "randomquotemachine": {
+          "nativeClientId": "7svcf84dcubehv2tdt6cf82ve7",
+          "userPoolId": "us-east-2_UHx6HUrg2",
+          "userPoolName": "quoteMachine",
+          "webClientId": "7svcf84dcubehv2tdt6cf82ve7"
+        }
+      }
+    }
+  }
+}
