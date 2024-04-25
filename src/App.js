@@ -5,10 +5,11 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 import React, { useState, useEffect } from "react";
 import { Amplify } from 'aws-amplify';
 import awsconfig from './aws-exports';
+import config from './amplifyconfiguration.json';
 import { withAuthenticator} from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
 
-Amplify.configure(awsconfig)
+Amplify.configure(config)
   
 function App() {
   const [data, setData] = useState(null);
