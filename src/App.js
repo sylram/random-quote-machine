@@ -7,6 +7,7 @@ import { Amplify } from 'aws-amplify';
 import awsconfig from './aws-exports';
 import config from './amplifyconfiguration.json';
 import { withAuthenticator} from '@aws-amplify/ui-react';
+import { signOut } from 'aws-amplify/auth';
 import '@aws-amplify/ui-react/styles.css';
 
 Amplify.configure(config)
@@ -45,6 +46,9 @@ function App() {
 
   return (
     <div id="App" className='App'>
+      <div className='signOut buttons'>
+        <button  type="button" className="btn btn-primary btn-sm button" onClick={signOut}> Sign Out</button>
+      </div>
     {!loading ?  <CardComponent quotes={data}/> : <div>{error.message}</div> }
     </div>
   )

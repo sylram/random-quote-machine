@@ -18,6 +18,20 @@
   color: #61dafb;
 }
 
+.signOut{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+   button {
+    background-color: gray;
+    height: 35px;
+    border-color: gray;
+    border-radius: 5px;
+   }
+ 
+}
+
 
 .quote-box {
   padding: 40px 50px;

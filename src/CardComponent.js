@@ -48,6 +48,7 @@ function CardComponent({ quotes }) {
         <div className="buttons">
           <span id="link-container" className="link-container">
           <TwitterShareButton url="https://random-quote-machine-fawn.vercel.app/" title="Check out this quote!"><img src={twitter} className="App-logo" alt="logo" /></TwitterShareButton>
+          <button ></button>
           </span>
           <span id="button-container" className="button-container">
             <button id="new-quote" type="button" className="btn btn-primary btn-sm button" onClick={getRandomQuote}>New Quote</button>
